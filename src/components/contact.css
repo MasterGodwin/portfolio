@@ -1,0 +1,162 @@
+.contact {
+  width: 100%;
+  padding: 90px 0px;
+  background: linear-gradient(135deg, #06131b, #0b2233);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+  align-items: stretch;
+}
+
+
+.contact-left {
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px;
+  width: 100%;
+  box-shadow: 0 12px 40px rgba(62, 137, 236, 0.2);
+}
+
+.contact-left p {
+  color: #000;
+}
+
+.contact-left h1 {
+  color: #000;
+}
+
+.contact-left {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 35px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+.contact-left h1 {
+  font-size: 34px;
+  margin-bottom: 25px;
+  color: #06131b;
+  text-align: left;
+}
+
+.contact-left h3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #06131b;
+}
+
+.contact-left h3 i {
+  color: #3E89EC;
+  font-size: 18px;
+}
+
+.contact-left p {
+  margin-left: 30px;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.contact-right {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px 35px;
+  box-shadow: 0 15px 45px rgba(0, 0, 0, 0.12);
+}
+
+.contact-right h1 {
+  font-size: 30px;
+  margin-bottom: 25px;
+  color: #06131b;
+  text-align: left;
+}
+
+
+.form-gap {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-input,
+.form-input-message {
+  width: 93%;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.form-input:focus,
+.form-input-message:focus {
+  border-color: #3E89EC;
+  box-shadow: 0 0 0 3px rgba(62, 137, 236, 0.15);
+}
+
+.form-input-message {
+  height: 130px;
+  resize: none;
+}
+
+.contact-button {
+  margin-top: 15px;
+  padding: 14px;
+  background: #3E89EC;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .contact {
+    width: 100%;
+    padding: 90px 20px;
+    background: linear-gradient(135deg, #06131b, #0b2233);
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    padding: 12px 0px;
+  }
+
+  .contact-left h1,
+  .contact-right h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .form-gap {
+    flex-direction: column;
+  }
+
+  .form-input,
+  .form-input-message {
+    width: 83%;
+    margin: 9px;
+  }
+}

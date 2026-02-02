@@ -1,13 +1,15 @@
+import "./contact.css";
+
 const Contact = () => {
     return (
-        <section className="contact">
+        <section className="contact" id="contact">
             <div className="contact-container">
                 <div className="contact-left">
-                    <h1 style={{}}>Contact Us</h1>
+                    <h1>Contact Us</h1>
 
-                    <div style={{ textAlign: "left" }}>
-                        <h3 style={{ color: "black" }}><i className="fa-solid fa-location-dot"></i> Address</h3>
-                        <p style={{ textAlign: "left", lineHeight: 1.5 }}>
+                    <div>
+                        <h3><i className="fa-solid fa-location-dot"></i> Address</h3>
+                        <p>
                             &nbsp;&nbsp;&nbsp; 3/854B, SR Naidu Nagar,<br /> &nbsp;&nbsp;&nbsp; Venkatchalapuram, <br /> &nbsp;&nbsp;&nbsp; Sattur - 626203, <br /> &nbsp;&nbsp;&nbsp; Virudhunagar District.
                         </p>
                         <h3 style={{ color: "black" }}><i className="fa-solid fa-envelope"></i> Email Us</h3>
@@ -34,6 +36,7 @@ const Contact = () => {
                         <div>
                             <textarea type="text" className="form-input-message" name="message" placeholder="Message" />
                         </div>
+                        <button className="contact-button">Submit</button>
                     </form>
                 </div>
             </div>
