@@ -77,15 +77,27 @@
   font-size: 14px;
 }
 
-/* ================= MOBILE MENU ================= */
+.theme-toggle {
+  background: transparent;
+  border: 1px solid #ccc;
+  padding: 6px 14px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 14px;
+}
 
+body.dark .theme-toggle {
+  border-color: #fff;
+  color: #fff;
+}
+ 
 .menu-icon {
   display: none;
   font-size: 26px;
   cursor: pointer;
 }
-
-/* overlay */
+ 
 .mobile-menu-overlay {
   position: fixed;
   top: 0;
@@ -95,8 +107,7 @@
   background: rgba(0, 0, 0, 0.4);
   z-index: 2000;
 }
-
-/* menu box */
+ 
 .mobile-menu {
   width: 260px;
   height: 100%;
@@ -149,4 +160,39 @@
   .menu-icon {
     display: block;
   }
+}
+
+
+
+body.dark .header.sticky {
+  background: #000;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+}
+
+body.dark .nav-container,
+body.dark .nav-links li {
+  color: #e5e7eb;
+}
+
+body.dark .nav-links li::after {
+  background: #60a5fa;
+}
+
+body.dark .logo {
+  background: #e5e7eb;
+  color: #0f172a;
+}
+
+body.dark .resume-button {
+  background: #3E89EC;
+  color: #fff;
+}
+
+body.dark .mobile-menu {
+  background: #0f172a;
+}
+
+body.dark .mobile-menu ul li,
+body.dark .close-btn {
+  color: #e5e7eb;
 }

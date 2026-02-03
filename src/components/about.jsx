@@ -13,21 +13,16 @@ const About = () => {
           <h2>About Us</h2>
 
           <p>
-            I am Nesaraj Godwin, a passionate Software Developer with a strong foundation in building <br />
-            responsive and user-friendly web applications. I enjoy turning ideas into real-world <br />
-            solutions using clean code and modern technologies.
+            I am Nesaraj Godwin, a passionate Software Developer with a strong foundation in building responsive and user-friendly web applications. I enjoy turning ideas into real-world solutions using clean code and modern technologies.
           </p>
 
           <p>
-            I have hands-on experience working with HTML, CSS, JavaScript, React JS, Node JS, PHP, <br /> 
-            and databases like MySQL and PostgreSQL. I focus on writing scalable, maintainable <br />
-            code and creating smooth user experiences across all devices.
+            I have hands-on experience working with HTML, CSS, JavaScript, React JS, Node JS, PHP, and databases like MySQL and PostgreSQL. I focus on writing scalable, maintainable code and creating smooth user experiences across all devices.
           </p>
 
-          <p>I am a quick learner who enjoys solving problems, exploring new technologies, and <br />
-          continuously improving my skills. Currently, I am looking for opportunities where I <br />
-          can contribute to meaningful projects, grow as a developer, and add value to a 
-          dynamic team.</p>
+          <p>
+            I am a quick learner who enjoys solving problems, exploring new technologies, and continuously improving my skills. Currently, I am looking for opportunities where I can contribute to meaningful projects, grow as a developer, and add value to a dynamic team.
+          </p>
 
           <div className="tech-stack">
             <span className="tech-btn html">HTML</span>

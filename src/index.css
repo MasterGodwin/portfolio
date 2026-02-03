@@ -1,15 +1,40 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+body.light {
   background-color: #ffffff;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #000;
+}
+ 
+body.dark {
+  background-color: #000;
+  color: #ffffff;
+}
+ 
+body.dark .about,
+body.dark .education,
+body.dark .experience,
+body.dark .projects {
+  background-color: #000;
+}
+ 
+body.dark .project-card,
+body.dark .education-box,
+body.dark .process-content,
+body.dark .contact-left,
+body.dark .contact-right {
+  background-color: #000;
+  color: #ffffff;
+}
+ 
+body.dark .header {
+  background-color: #000;
 }
 
+body.dark .nav-links li {
+  color: #ffffff;
+}
+ 
+body.dark input,
+body.dark textarea {
+  background-color: #000;
+  color: #ffffff;
+  border: 1px solid #334155;
+}

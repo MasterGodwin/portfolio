@@ -15,6 +15,7 @@ const Experience = () => {
                         <div className="process-content">
                             <h4>Zenskar Software Solutions</h4>
                             <p>Software Trainee</p>
+                            <p>Feb 2024 - May 2024</p>
                         </div>
                     </div>
                     <div className="process-step">
@@ -25,6 +26,7 @@ const Experience = () => {
                         <div className="process-content">
                             <h4>JellySoft</h4>
                             <p>Website Designer</p>
+                            <p>June 2024 - December 2024</p>
                         </div>
                     </div>
                     <div className="process-step">
@@ -35,6 +37,7 @@ const Experience = () => {
                         <div className="process-content">
                             <h4>Sazs Apps</h4>
                             <p>Software Trainee</p>
+                            <p>August 2025 - Present</p>
                         </div>
                     </div>
                 </div>

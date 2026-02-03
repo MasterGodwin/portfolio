@@ -134,3 +134,27 @@
     width: 45%;
   }
 }
+
+body.dark .experience-container h1 {
+  color: #e5e7eb !important;
+}
+
+body.dark .process-timeline::before {
+  background: #60a5fa;
+}
+
+body.dark .process-number {
+  background: #60a5fa;
+}
+
+body.dark .process-content {
+  background: #0f172a;
+}
+
+body.dark .process-content h4 {
+  color: #f8fafc;
+}
+
+body.dark .process-content p {
+  color: #cbd5e1;
+}

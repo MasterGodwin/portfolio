@@ -1,13 +1,13 @@
 .education {
   background: #fff;
-  padding: 80px 20px;
+  padding: 40px 20px;
 }
 
 .education-container {
   max-width: 900px;
   margin: auto;
 }
- 
+
 .education-container h1 {
   text-align: center;
   font-size: 32px;
@@ -15,7 +15,7 @@
   font-weight: 600;
   color: #111;
 }
- 
+
 .education-box {
   background: #ffffff;
   border-radius: 16px;
@@ -26,29 +26,31 @@
   flex-direction: column;
   gap: 8px;
   transition: all 0.3s ease;
+  border: 1px solid #2e80e4;
 }
- 
+
 .education-box:hover {
   transform: translateY(-6px);
   box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
 }
- 
+
 .education-box h3 {
-  font-size: 20px;
+  font-size: 30px;
   font-weight: 600;
   color: #111;
 }
- 
+
 .education-box p:nth-of-type(1) {
-  font-size: 15px;
+  font-size: 23px;
+  margin: -10px;
   color: #555;
 }
- 
+
 .education-box p:nth-of-type(2) {
-  font-size: 14px;
+  font-size: 20px;
   color: #888;
 }
- 
+
 @media (max-width: 768px) {
   .education {
     padding: 60px 16px;
@@ -67,7 +69,7 @@
     font-size: 18px;
   }
 }
- 
+
 @media (max-width: 480px) {
   .education {
     padding: 50px 14px;
@@ -91,4 +93,25 @@
   .education-box p {
     font-size: 14px;
   }
+}
+
+body.dark .education {
+  background: #000;
+}
+
+body.dark .education-container h1 {
+  color: #f1f5f9 !important;
+}
+
+body.dark .education-box {
+  background: #0f172a;
+  border-color: #3E89EC;
+}
+
+body.dark .education-box h3 {
+  color: #f8fafc;
+}
+
+body.dark .education-box p {
+  color: #cbd5e1;
 }

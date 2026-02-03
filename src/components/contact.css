@@ -1,7 +1,7 @@
 .contact {
   width: 100%;
   padding: 90px 0px;
-  background: linear-gradient(135deg, #06131b, #0b2233);
+  background: #fff;
 }
 
 .contact-container {
@@ -11,7 +11,6 @@
   gap: 60px;
   align-items: stretch;
 }
-
 
 .contact-left {
   background-color: #fff;
@@ -98,6 +97,8 @@
   font-size: 14px;
   outline: none;
   transition: all 0.25s ease;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .form-input:focus,
@@ -132,7 +133,7 @@
   .contact {
     width: 100%;
     padding: 90px 20px;
-    background: linear-gradient(135deg, #06131b, #0b2233);
+    background: #fff;
   }
 
   .contact-container {
@@ -159,4 +160,35 @@
     width: 83%;
     margin: 9px;
   }
+}
+
+body.dark .contact {
+  background: #000;
+}
+
+body.dark .contact-left,
+body.dark .contact-right {
+  background: #0f172a;
+}
+
+body.dark .contact-left h1,
+body.dark .contact-right h1,
+body.dark .contact-left h3 {
+  color: #f8fafc !important;
+}
+
+body.dark .contact-left p {
+  color: #cbd5e1;
+}
+
+body.dark .form-input,
+body.dark .form-input-message {
+  background: #020617;
+  border-color: #334155;
+  color: #e5e7eb;
+}
+
+body.dark .form-input::placeholder,
+body.dark .form-input-message::placeholder {
+  color: #94a3b8;
 }

@@ -5,9 +5,7 @@ const Banner = () => {
     <section className="banner" id="home">
       <div className="banner-content">
 
-        <p>HELLO</p>
-
-        <h1>I am Nesaraj Godwin</h1>
+        <h1>I'm Nesaraj Godwin</h1>
 
         <h2>Software Developer</h2>
  

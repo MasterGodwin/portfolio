@@ -1,6 +1,7 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useContext } from "react";
 import "./header.css";
 import PDF from "../assets/resume.pdf"
+import { ThemeContext } from "./themeContext";
 
 const Header = () => {
   const [sticky, setSticky] = useState(false);
@@ -15,7 +16,7 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
- 
+
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
@@ -38,11 +39,13 @@ const Header = () => {
     }
   };
 
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
     <header className={sticky ? "header sticky" : "header"}>
       <div className="nav-container">
         <div className="logo">N</div>
- 
+
         <ul className="nav-links">
           <li onClick={() => scrollToSection("home")}>Home</li>
           <li onClick={() => scrollToSection("about")}>About</li>
@@ -52,15 +55,20 @@ const Header = () => {
           <li onClick={() => scrollToSection("contact")}>Contact</li>
         </ul>
 
+        <button className="theme-toggle" onClick={toggleTheme}>
+          {theme === "light" ? "Dark" : "Light"}
+        </button>
+
+
         <a href={PDF} download className="resume-button">
           Resume
-        </a> 
+        </a>
 
         <div className="menu-icon" onClick={() => setMenuOpen(true)}>
           ☰
         </div>
       </div>
- 
+
       {menuOpen && (
         <div className="mobile-menu-overlay">
           <div className="mobile-menu" ref={menuRef}>

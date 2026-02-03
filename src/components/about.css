@@ -11,11 +11,17 @@
     gap: 50px;
 }
 
+.about-content,
+.about-image {
+    flex: 1;
+}
+
 .about-image img {
     width: 100%;
     max-width: 812px;
-    height: 459px;
+    height: 410px;
     border-radius: 8px;
+    padding-top: 60px;
 }
 
 .about-content h5 {
@@ -170,7 +176,9 @@
 
     .about-content,
     .about-image {
-        width: 100%;
+        max-width: 100%;
+        padding-top: unset;
+        height: unset;
     }
 }
 
@@ -178,4 +186,22 @@
     .about-container {
         gap: 30px;
     }
+}
+
+body.dark .about {
+  background-color: #000;
+}
+
+body.dark .about-content h2,
+body.dark .about-content h5 {
+  color: #e5e7eb;
+}
+
+body.dark .about-content p {
+  color: #cbd5f5;
+}
+
+body.dark .tech-btn {
+  background: #0f172a;
+  border-color: #334155;
 }
