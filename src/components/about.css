@@ -189,19 +189,20 @@
 }
 
 body.dark .about {
-  background-color: #000;
+    background-color: #000;
 }
 
 body.dark .about-content h2,
 body.dark .about-content h5 {
-  color: #e5e7eb;
+    color: #e5e7eb;
 }
 
 body.dark .about-content p {
-  color: #cbd5f5;
+    color: #cbd5f5;
 }
 
 body.dark .tech-btn {
-  background: #0f172a;
-  border-color: #334155;
+    background: #ffffff;
+    border-color: #334155;
+    border: 1px solid #334155;
 }
